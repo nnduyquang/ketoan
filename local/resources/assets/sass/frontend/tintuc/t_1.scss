@@ -1,0 +1,112 @@
+#t_1 {
+  background-position: center center;
+  background-repeat: repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 38px;
+  padding-bottom: 58px;
+  h3 {
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    a {
+      color: #004085;
+      font-family: 'Yeseva One', cursive;
+    }
+  }
+
+  h4.tt-nav {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    a {
+      color: #004085;
+      font-family: 'Yeseva One', cursive;
+    }
+  }
+  p {
+    font-size: 16px;
+    height: 40px;
+    line-height: 1.25;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  p.time {
+    font-size: 15px;
+    height: fit-content !important;
+    margin-bottom: 6px;
+  }
+
+  p.link-p {
+    a {
+      color: #4f5151;
+      transition: .3s;
+      //font-family: 'Yeseva One', cursive;
+      font-size: 16px;
+    }
+  }
+  h4, h1 {
+    font-family: 'Yeseva One', cursive;
+    color: #004085;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    text-align: center;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 68px;
+      height: 2px;
+      background-color: #004085;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%) skew(45deg);
+    }
+  }
+
+  .img-ttlq {
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 76px;
+    height: 58px;
+  }
+
+  .img-ttlq2 {
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 186px;
+    height: 138px;
+    margin-right: 8px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border: 4px solid #f2f5f5;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #t_1 {
+    .img-content{
+     width: 100%;
+      .img-ttlq2 {
+        width: 100%;
+        height: 196px;
+        margin-right: 0px;
+      }
+    }
+
+  }
+}

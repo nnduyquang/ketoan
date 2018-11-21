@@ -1,0 +1,49 @@
+#l_1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  h4,h1{
+    font-family: 'Yeseva One', cursive;
+    color: #004085;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  input{
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 4px 8px;
+  }
+
+  textarea{
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 4px 8px;
+  }
+  span.fr-title{
+    font-size: 14px;
+  }
+
+  button.send-lh{
+    padding: 10px 8px 7px 8px;
+    border: none;
+    font-size: 13px;
+    background-color: #004085;
+    color: white;
+  }
+  h1{
+    &:after{
+      position: absolute;
+      content: '';
+      width: 68px;
+      height: 2px;
+      background-color: #004085;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%) skew(45deg);
+    }
+  }
+  p{
+    line-height: 22px;
+    font-size: 18px;
+    text-align: center;
+  }
+}

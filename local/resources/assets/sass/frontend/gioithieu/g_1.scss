@@ -1,0 +1,29 @@
+#g_1{
+  background-position: center center;
+  background-repeat: repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 38px;
+  padding-bottom: 58px;
+  h4, h1 {
+    font-family: 'Yeseva One', cursive;
+    color: #004085;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  h1{
+    font-size: 22px;
+    text-align: center;
+    &:after{
+      position: absolute;
+      content: '';
+      width: 68px;
+      height: 2px;
+      background-color: #004085;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%) skew(45deg);
+    }
+  }
+
+}
