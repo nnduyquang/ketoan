@@ -1,4 +1,4 @@
-<div class="container-fluid p-0 loiph-slider">
+<div class="container-fluid p-0 loiph-slider d-md-block d-none">
     <div style="width: 100%" id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">

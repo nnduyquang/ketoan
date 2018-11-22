@@ -19,6 +19,7 @@
 @stop
 @section('slider')
     @include('frontend.common.slider')
+    @include('frontend.common.mslider')
 @stop
 @section('container')
     @include('frontend.home.h_1')
@@ -59,6 +60,25 @@
                 // Parameters has to be in square bracket '[]'
                 owl.trigger('prev.owl.carousel', [300]);
             })
+
+            $('#owl-project2').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+
         });
     </script>
 @stop

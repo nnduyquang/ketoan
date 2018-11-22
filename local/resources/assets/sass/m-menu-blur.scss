@@ -21,16 +21,10 @@
   background: white;
   -webkit-transition: left 0.3s ease, -webkit-box-shadow 0.3s ease 0.2s;
   transition: left 0.3s ease, box-shadow 0.3s ease 0.2s;
-  -webkit-box-shadow: 0.5em 0 0 0 $sub-color, 0.6em 0 0 0 $sub-color;
-  box-shadow: 0.5em 0 0 0 $sub-color, 0.6em 0 0 0 $sub-color;
+  -webkit-box-shadow: 0.5em 0 0 0 #004085, 0.6em 0 0 0 #004085;
+  box-shadow: 0.5em 0 0 0 #004085, 0.6em 0 0 0 #004085;
 }
-.sidebar #close {
-  //float: right;
-  //margin: -5.5rem 1rem;
-  //font-size: 1.4em;
-  //color: #fa598d;
-  //text-align: right;
-}
+
 
 .sidebar.closed {
   left: -260px;
@@ -99,7 +93,7 @@
 
 }
 .sidebar .background-sidebar{
-  background-image: url(../images/logo/logo_footer.png);
+  background-image: url(../images/logo/logo.png);
   height: calc(56px*4);
   background-repeat: no-repeat;
   background-size: contain;
