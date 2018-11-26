@@ -8,7 +8,7 @@
                     toán vào mail cho các bạn ngay khi có thể</p>
 
                 <div class="row p-0 mt-4 mb-4">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <h4 class="mt-3 text-center">FORM LIÊN HỆ:</h4>
                         <div style="width: 100%;margin: auto">
                             <span class="fr-title">Tên của bạn:</span><br>
@@ -20,7 +20,7 @@
                             <button class="send-lh">GỞI LIÊN HỆ</button>
                         </div>
                     </div>
-                    <div class="col-6 text-center">
+                    <div class="col-md-6 text-center">
                         <h4 class="mt-3">THÔNG TIN DOANH NGHIỆP:</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aperiam aspernatur
                             excepturi facere, ipsam necessitatibus odio perferendis porro quas quasi quia quisquam quo
