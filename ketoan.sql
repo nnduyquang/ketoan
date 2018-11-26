@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 02, 2018 lúc 10:52 AM
+-- Thời gian đã tạo: Th10 26, 2018 lúc 04:30 AM
 -- Phiên bản máy phục vụ: 10.1.31-MariaDB
 -- Phiên bản PHP: 7.0.29
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `startproject`
+-- Cơ sở dữ liệu: `ketoan`
 --
 
 -- --------------------------------------------------------
@@ -45,6 +45,14 @@ CREATE TABLE `category_items` (
   `seo_id` int(10) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng `category_items`
+--
+
+INSERT INTO `category_items` (`id`, `name`, `path`, `description`, `image`, `image_mobile`, `level`, `parent_id`, `type`, `order`, `is_active`, `created_at`, `updated_at`, `seo_id`) VALUES
+(1, 'Dịch Vụ', 'dich-vu', NULL, NULL, NULL, 0, NULL, 0, 1, 1, '2018-11-26 02:09:19', '2018-11-26 02:09:19', NULL),
+(2, 'Tin Tức', 'tin-tuc', NULL, NULL, NULL, 0, NULL, 0, 1, 1, '2018-11-26 02:09:28', '2018-11-26 02:09:28', NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -58,6 +66,18 @@ CREATE TABLE `category_many` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `category_many`
+--
+
+INSERT INTO `category_many` (`category_id`, `item_id`, `type`, `created_at`, `updated_at`) VALUES
+(1, 2, 0, '2018-11-26 03:07:10', '2018-11-26 03:07:10'),
+(1, 3, 0, '2018-11-26 03:10:03', '2018-11-26 03:10:03'),
+(1, 4, 0, '2018-11-26 03:10:24', '2018-11-26 03:21:25'),
+(1, 5, 0, '2018-11-26 03:20:57', '2018-11-26 03:20:57'),
+(1, 6, 0, '2018-11-26 03:21:48', '2018-11-26 03:21:48'),
+(1, 7, 0, '2018-11-26 03:22:40', '2018-11-26 03:22:40');
 
 -- --------------------------------------------------------
 
@@ -304,6 +324,19 @@ CREATE TABLE `posts` (
   `seo_id` int(10) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng `posts`
+--
+
+INSERT INTO `posts` (`id`, `title`, `path`, `description`, `content`, `image`, `post_type`, `is_active`, `category_item_id`, `user_id`, `created_at`, `updated_at`, `seo_id`) VALUES
+(1, 'Giới Thiệu', 'gioi-thieu', NULL, NULL, 'images/uploads/images/gt_1.jpg', 0, 1, NULL, 1, '2018-11-26 02:42:50', '2018-11-26 02:44:53', NULL),
+(2, 'Dịch Vụ Kế Toán Trọn Gói', 'dich-vu-ke-toan-tron-goi', NULL, NULL, NULL, 1, 1, NULL, 1, '2018-11-26 03:07:10', '2018-11-26 03:07:10', NULL),
+(3, 'Đăng Ký Hồ Sơ Ban Đầu, Đặt In Và Phát Hành Hóa Đơn', 'dang-ky-ho-so-ban-dau-dat-in-va-phat-hanh-hoa-don', NULL, NULL, NULL, 1, 1, NULL, 1, '2018-11-26 03:10:03', '2018-11-26 03:10:03', NULL),
+(4, 'Dịch Vụ Quyết Toán Thuế', 'dich-vu-quyet-toan-thue', NULL, NULL, NULL, 1, 1, NULL, 1, '2018-11-26 03:10:24', '2018-11-26 03:21:25', NULL),
+(5, 'Dịch Vụ Kế Toán Thuế', 'dich-vu-ke-toan-thue', NULL, NULL, NULL, 1, 1, NULL, 1, '2018-11-26 03:20:57', '2018-11-26 03:20:57', NULL),
+(6, 'Dịch Vụ Báo Cáo Thuế', 'dich-vu-bao-cao-thue', NULL, NULL, NULL, 1, 1, NULL, 1, '2018-11-26 03:21:48', '2018-11-26 03:21:48', NULL),
+(7, 'Dịch Vụ Làm Báo Cáo Tài Chính Cuối Năm', 'dich-vu-lam-bao-cao-tai-chinh-cuoi-nam', NULL, NULL, NULL, 1, 1, NULL, 1, '2018-11-26 03:22:40', '2018-11-26 03:22:40', NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -525,7 +558,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT cho bảng `category_items`
 --
 ALTER TABLE `category_items`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `category_permissions`
@@ -561,7 +594,7 @@ ALTER TABLE `permissions`
 -- AUTO_INCREMENT cho bảng `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT cho bảng `products`
