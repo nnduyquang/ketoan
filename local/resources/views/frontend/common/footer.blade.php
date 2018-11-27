@@ -45,14 +45,13 @@
                             02838-15-50-61</p>
                     </li>
 
-                    <li class="d-flex align-items-center">
+                    <li class="d-flex align-items-center" sty>
                         <i class="far fa-envelope"></i>
-                        <p style="width: 100%;overflow-wrap: break-word;">ketoanuytinnguyenthang@gmail.com
-
+                        <p style="word-break: break-all;">ketoanuytinnguyenthang@gmail.com
                         </p>
                     </li>
 
-
+cd
                 </ul>
             </div>
 
