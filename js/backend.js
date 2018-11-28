@@ -258,6 +258,12 @@ if ($('#btnBrowseImageMXH').length) {
         selectFileWithKCFinder('pathImageMXH','showHinhMXH');
     }
 };
+if ($('#btnBrowseImageIcon').length) {
+    var button1 = document.getElementById('btnBrowseImageIcon');
+    button1.onclick = function () {
+        selectFileWithKCFinder('pathImageIcon','showHinhIcon');
+    }
+};
 // integratedCKEDITOR('description-post',height=200);
 integratedCKEDITOR('content-post',height=800);
 // integratedCKEDITOR('seo-description-post',height=200);

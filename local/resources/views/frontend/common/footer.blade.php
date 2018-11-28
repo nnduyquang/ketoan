@@ -45,8 +45,6 @@
                         <p style="word-break: break-all;">{{$listFrontendCommon['email']}}
                         </p>
                     </li>
-
-cd
                 </ul>
             </div>
 

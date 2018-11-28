@@ -7,27 +7,47 @@
     position: relative;
     margin-bottom: 15px;
   }
+  h3{
+    font-family: 'Yeseva One', cursive;
+    color: #004085;
+  }
   input{
     width: 100%;
     margin-bottom: 12px;
-    padding: 4px 8px;
+    padding: 8px 15px;
+    border-radius: 18px;
+    border: none;
+    background-color: #dbe4ed;
+    &:focus{
+      outline: none;
+    }
   }
 
   textarea{
     width: 100%;
     margin-bottom: 18px;
-    padding: 4px 8px;
+    padding: 8px 15px;
+    border-radius: 18px;
+    background-color: #dbe4ed;
+    border: none;
+    &:focus{
+      outline: none;
+    }
   }
   span.fr-title{
     font-size: 14px;
   }
 
   button.send-lh{
-    padding: 10px 8px 7px 8px;
+    //padding: 10px 8px 7px 8px;
     border: none;
     font-size: 13px;
-    background-color: #004085;
+    background-color: transparent;
     color: white;
+    img{
+      width: 186px;
+      height: auto;
+    }
   }
   h1{
     &:after{

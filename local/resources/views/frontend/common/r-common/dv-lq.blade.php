@@ -17,7 +17,8 @@
     }
 
     .dv-lq h6 {
-        height: 42px;
+        height: fit-content;
+        max-height: 42px;
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;

@@ -23,12 +23,16 @@
       p{
         //font-family: 'Markazi Text', serif;
         //font-family: 'Lalezar', cursive;
+        width: 300px;
+        //word-break: break-all;
         font-family: 'Yeseva One', cursive;
         font-size: 18px;
+        line-height: 22px;
       }
     }
 
     .address{
+      width: fit-content;
       i{
         font-size: 32px;
         margin-right: 15px;
@@ -37,6 +41,7 @@
         color: #4c4d4e;
       }
       p{
+        width: 268px;
         line-height: 22px;
         font-size: 18px;
         color: #4c4d4e;
@@ -59,6 +64,7 @@
           color: white;
           font-family: 'Yeseva One', cursive;
           transition: .6s;
+          text-transform: uppercase;
           &:hover{
             background-color: #007bff;
           }

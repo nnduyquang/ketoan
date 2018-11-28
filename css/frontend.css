@@ -420,8 +420,16 @@ This class is added to the container
 }
 
 #menu .middle-logo .slogan p {
+  width: 300px;
   font-family: 'Yeseva One', cursive;
   font-size: 18px;
+  line-height: 22px;
+}
+
+#menu .middle-logo .address {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #menu .middle-logo .address i {
@@ -433,6 +441,7 @@ This class is added to the container
 }
 
 #menu .middle-logo .address p {
+  width: 268px;
   line-height: 22px;
   font-size: 18px;
   color: #4c4d4e;
@@ -464,6 +473,7 @@ This class is added to the container
   font-family: 'Yeseva One', cursive;
   -webkit-transition: .6s;
   transition: .6s;
+  text-transform: uppercase;
 }
 
 #menu .menu-content ul li a:hover {
@@ -590,6 +600,7 @@ This class is added to the container
   color: white;
   -webkit-transition: .6s;
   transition: .6s;
+  line-height: 22px;
 }
 
 #footer ul.middle li a:hover {
@@ -1177,12 +1188,13 @@ This class is added to the container
   font-family: 'Yeseva One', cursive;
   color: #004085;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 32px;
 }
 
 #g_1 h1 {
   font-size: 22px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 #g_1 h1:after {
@@ -1197,6 +1209,52 @@ This class is added to the container
           transform: translateX(-50%) skew(45deg);
 }
 
+#g_1 h2, #g_1 h3 {
+  margin-bottom: 10px;
+}
+
+#g_1 p {
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+#g_1 ol li {
+  margin-bottom: 8px;
+}
+
+#g_1 ol li span {
+  line-height: 22px;
+}
+
+#g_1 ul {
+  list-style-type: none;
+}
+
+#g_1 ul li {
+  margin-bottom: 10px;
+}
+
+#g_1 ul li span {
+  line-height: 22px;
+}
+
+#g_1 table tr {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#g_1 table tr td span {
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+#g_1 table tr td p {
+  line-height: 20px;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
 #l_1 {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1209,16 +1267,35 @@ This class is added to the container
   margin-bottom: 15px;
 }
 
+#l_1 h3 {
+  font-family: 'Yeseva One', cursive;
+  color: #004085;
+}
+
 #l_1 input {
   width: 100%;
   margin-bottom: 12px;
-  padding: 4px 8px;
+  padding: 8px 15px;
+  border-radius: 18px;
+  border: none;
+  background-color: #dbe4ed;
+}
+
+#l_1 input:focus {
+  outline: none;
 }
 
 #l_1 textarea {
   width: 100%;
   margin-bottom: 18px;
-  padding: 4px 8px;
+  padding: 8px 15px;
+  border-radius: 18px;
+  background-color: #dbe4ed;
+  border: none;
+}
+
+#l_1 textarea:focus {
+  outline: none;
 }
 
 #l_1 span.fr-title {
@@ -1226,11 +1303,15 @@ This class is added to the container
 }
 
 #l_1 button.send-lh {
-  padding: 10px 8px 7px 8px;
   border: none;
   font-size: 13px;
-  background-color: #004085;
+  background-color: transparent;
   color: white;
+}
+
+#l_1 button.send-lh img {
+  width: 186px;
+  height: auto;
 }
 
 #l_1 h1:after {

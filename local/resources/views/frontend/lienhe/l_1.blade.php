@@ -1,3 +1,6 @@
+<style>
+
+</style>
 <div class="container-fluid" id="l_1" style="background-image:url({{URL::asset('images/bg/bg-full.png')}});">
     <div class="container">
         <div class="row">
@@ -7,7 +10,10 @@
                 <p>Công ty chúng tôi nhận tư vấn kế toán miễn phí. Các bạn liên hệ form bên dưới, chúng tôi sẽ tư vấn kế
                     toán vào mail cho các bạn ngay khi có thể</p>
 
-                <div class="row p-0 mt-4 mb-4">
+                <div class="row mt-4 mb-4 p-4 bg-white" style="border-radius: 8px;">
+                    <div class="col-12 text-center">
+
+                    </div>
                     <div class="col-md-6">
                         <h4 class="mt-3 text-center">FORM LIÊN HỆ:</h4>
                         <div style="width: 100%;margin: auto">
@@ -17,21 +23,27 @@
                             <input type="text" placeholder="Email của bạn"><br>
                             <span class="fr-title">Nội dung liên hệ:</span><br>
                             <textarea placeholder="Nội dung liên hệ" name="" id="" cols="30" rows="10"></textarea><br>
-                            <button class="send-lh">GỞI LIÊN HỆ</button>
+                            <button class="send-lh">
+                                <img src="{{URL::asset('images/button/Send-Email-Button-Transparent-PNG.png')}}" alt="">
+                            </button>
                         </div>
                     </div>
-                    <div class="col-md-6 text-center">
-                        <h4 class="mt-3">THÔNG TIN DOANH NGHIỆP:</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aperiam aspernatur
-                            excepturi facere, ipsam necessitatibus odio perferendis porro quas quasi quia quisquam quo
-                            rem repellendus reprehenderit sapiente tempora velit vero!</p>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum delectus dolorum
-                            ducimus, earum esse facilis fugit in libero minus mollitia natus nobis obcaecati optio
-                            perspiciatis quasi sapiente, sit vel.Amet, architecto asperiores aspernatur atque culpa
-                            debitis dicta dolores eligendi fugit illo incidunt natus nemo neque odit, omnis placeat quod
-                            reiciendis, similique soluta tempora totam unde ut vitae voluptatem voluptatum?
-                        </p>
+                    <div class="col-md-6 mt-3 text-center">
+                        {{--<img src="{{URL::asset('images/button/emailbg.png')}}" alt="">--}}
+                        <h4>LIÊN HỆ VỚI CHÚNG TÔI</h4>
+                        <h3 class="mb-3">CÔNG TY TNHH <span style="color: red">NGUYỄN</span> THẮNG <br>
+                            DỊCH VỤ KẾ TOÁN UY TÍN</h3>
+
+                        <p class="mb-2"><span style="color: red">ĐỊA CHỈ</span>: 189 Đường Tây Thạnh, Phường Tây Thạnh, Quận Tân Phú, TP.HCM</p>
+                        <p class="mb-2" style="word-break: break-all;"><span style="color: red">EMAIL</span>: ketoanuytinnguyenthang@gmail.com</p>
+                        <p class="mb-2"><span style="color: red">PHÒNG KINH DOANH</span>: 0909 64 85 80</p>
+                        <p class="mb-2"><span style="color: red">HOTLINE</span>: 0977 77-66-55</p>
+                        <p class="mb-2"><span style="color: red">PHONE</span>: 028.38 15-50-61</p>
+                        <p class="mb-2"><span style="color: red">FAX</span>: (028) 38.15.64.10</p>
+                        <p class="mb-2"><span style="color: red">MÃ SỐ THUẾ</span>: 03 04 33 95 88</p>
+
+                        <img src="{{URL::asset('images/button/emailbg1.png')}}" alt="" style="width: 300px;height: auto">
+
                     </div>
                 </div>
 

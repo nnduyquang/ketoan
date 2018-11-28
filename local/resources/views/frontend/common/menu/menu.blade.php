@@ -26,20 +26,22 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 d-flex align-items-center justify-content-between">
+
                 <div class="d-flex align-items-center">
                     <img src="{{URL::asset('images/logo/logo.png')}}" alt="">
                     <div class="slogan" style="color: #055f93">
                         <p class="mb-1">{{$listFrontendCommon['company-name']}}</p>
                     </div>
                 </div>
+
                 <div class="address d-flex align-items-center">
                     <div class="d-flex align-items-center">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p>{{$listFrontendCommon['address']}}</p>
+                        <p class="">{{$listFrontendCommon['address']}}</p>
                     </div>
                     <div class="ml-5 d-flex align-items-center">
                         <i class="fas fa-phone-square"></i>
-                        <p>{{$listFrontendCommon['phone-1']}}<br>
+                        <p style="width: fit-content">{{$listFrontendCommon['phone-1']}}<br>
                             {{$listFrontendCommon['phone-2']}}</p>
                     </div>
                 </div>
