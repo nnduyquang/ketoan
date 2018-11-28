@@ -42,7 +42,7 @@
                         <p class="mb-2"><span style="color: red">FAX</span>: (028) 38.15.64.10</p>
                         <p class="mb-2"><span style="color: red">MÃ SỐ THUẾ</span>: 03 04 33 95 88</p>
 
-                        <img src="{{URL::asset('images/button/emailbg1.png')}}" alt="" style="width: 300px;height: auto">
+                        <img src="{{URL::asset('images/button/emailbg1.png')}}" alt="" style="width: 250px;height: auto">
 
                     </div>
                 </div>
