@@ -674,6 +674,7 @@ This class is added to the container
 #banner-title .nav-bar ul li a {
   font-size: 16px;
   color: white;
+  text-transform: uppercase;
 }
 
 #banner-title .nav-bar ul li:not(:last-child) {

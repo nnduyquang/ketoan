@@ -4,7 +4,7 @@
             <div class="col-12 nav-bar">
                 <ul>
                     <li><a href="">TRANG CHỦ</a></li>
-                    <li><a href="">GIỚI THIỆU</a></li>
+                    <li><a href="">{{$data['post']->title}}</a></li>
                 </ul>
             </div>
         </div>

@@ -61,16 +61,6 @@
                     <li><a class="{{ request()->is($item->link()) ? 'active' : '/' }}"
                         href="{{URL::to($item->link())}}">{{$item->title}}</a></li>
                     @endforeach
-                    {{--<li><a class="{{ request()->is('dich-vu.html') ? 'active' : '' }}"--}}
-                           {{--href="{{url('/dich-vu.html')}}">DỊCH VỤ</a></li>--}}
-                    {{--<li><a class="{{ request()->is('bao-gia.html') ? 'active' : '' }}"--}}
-                           {{--href="{{url('/bao-gia.html')}}">BẢNG GIÁ</a></li>--}}
-                    {{--<li><a class="{{ request()->is('gioi-thieu.html') ? 'active' : '' }}"--}}
-                           {{--href="{{url('/gioi-thieu.html')}}">GIỚI THIỆU</a></li>--}}
-                    {{--<li><a class="{{ request()->is('tin-tuc*') ? 'active' : '' }}"--}}
-                           {{--href="{{url('/tin-tuc.html')}}">TIN TỨC</a></li>--}}
-                    {{--<li><a class="{{ request()->is('lien-he.html') ? 'active' : '' }}"--}}
-                           {{--href="{{url('/lien-he.html')}}">LIÊN HỆ TƯ VẤN</a></li>--}}
                 </ul>
             </div>
         </div>
