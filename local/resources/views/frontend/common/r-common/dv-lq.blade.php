@@ -55,7 +55,7 @@
     <h5>DỊCH VỤ CỦA CHÚNG TÔI</h5>
 
     <div class="mt-2 mb-2">
-        @for ($i = 0; $i < 5; $i++)
+       @foreach($listFrontendCommon['services'] as $key=>$item)
 
             <div class="p-2 d-flex align-items-center">
                 {{--<div class="pr-2 float-left">--}}
@@ -65,11 +65,10 @@
                         {{--</div>--}}
                     {{--</a>--}}
                 {{--</div>--}}
-                <h6 class="pl-2"><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur doloremque
-                        earum.</a></h6>
+                <h6 class="pl-2"><a href="">{{$item->title}}</a></h6>
             </div>
 
-        @endfor
+        @endforeach
     </div>
 
 </div>

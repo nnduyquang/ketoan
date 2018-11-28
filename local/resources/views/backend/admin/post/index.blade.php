@@ -51,6 +51,7 @@
             <table class="table">
                 <tr>
                     <th>TT</th>
+                    <th>Icon</th>
                     <th>Tên Bài Viết</th>
                     <th>Trạng Thái</th>
                     <th>Người Đăng</th>
@@ -61,6 +62,7 @@
                 </tr>
                 @foreach ($posts as $key => $data)
                     <td>{{ ++$i }}</td>
+                    <td><i class="{{$data->icon}}"></i></td>
                     <td>{{ $data->title }}</td>
                     <td>{{ $data->is_active }}</td>
                     <td>{{ $data->users->name }}</td>

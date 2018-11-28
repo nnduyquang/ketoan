@@ -13,3 +13,9 @@ if ($('#btnBrowseImageMXH').length) {
         selectFileWithKCFinder('pathImageMXH','showHinhMXH');
     }
 };
+if ($('#btnBrowseImageIcon').length) {
+    var button1 = document.getElementById('btnBrowseImageIcon');
+    button1.onclick = function () {
+        selectFileWithKCFinder('pathImageIcon','showHinhIcon');
+    }
+};

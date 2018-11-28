@@ -32,7 +32,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="wrap-create-edit">
-                    {!! Form::hidden('post_type', 1) !!}
+                    {!! Form::hidden('post_type', IS_POST) !!}
                     <strong class="text-title-left">Tên Bài Viết</strong>
                     <div class="form-group">
                         {!! Form::text('title',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}
@@ -69,6 +69,12 @@
                         @else
                             {{ Html::image('','',array('id'=>'showHinhPost','class'=>'show-image'))}}
                         @endif
+                    </div>
+                </div>
+                <div class="wrap-create-edit">
+                    <strong class="text-title-right">Chọn Icon</strong>
+                    <div class="form-group">
+                        {!! Form::text('icon',null, array('placeholder' => 'Tên','class' => 'form-control')) !!}
                     </div>
                 </div>
             </div>

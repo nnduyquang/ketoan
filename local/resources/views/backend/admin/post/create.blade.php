@@ -63,6 +63,12 @@
                         {{ Html::image('','',array('id'=>'showHinhPost','class'=>'show-image'))}}
                     </div>
                 </div>
+                <div class="wrap-create-edit">
+                    <strong class="text-title-right">Chọn Icon</strong>
+                    <div class="form-group">
+                        {!! Form::text('icon', null, array('class' => 'form-control','id'=>'pathImageIcon')) !!}
+                    </div>
+                </div>
             </div>
         </div>
         <div class="wrap-create-edit">
@@ -102,7 +108,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <strong>Chọn hình đại diện hiển thị MXH: </strong>
-                        {!! Form::text('seo_image', null, array('class' => 'form-control','id'=>'pathImageMXH')) !!}
+                        {!! Form::text('seo-image', null, array('class' => 'form-control','id'=>'pathImageMXH')) !!}
                         <br>
                         {!! Form::button('Tìm', array('id' => 'btnBrowseImageMXH','class'=>'btn btn-primary')) !!}
                     </div>

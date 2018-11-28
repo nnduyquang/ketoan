@@ -26,7 +26,7 @@
                 <br>
 
                 <div class="mt-3 mb-4">
-                    <a class="btn-xemthem" href="">XEM THÊM</a>
+                    <a class="btn-xemthem" href="{{URL::to('gioi-thieu')}}">XEM THÊM</a>
                 </div>
 
             </div>

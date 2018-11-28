@@ -7,7 +7,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam libero magnam molestiae mollitia,
                     necessitatibus nemo praesentium quae repudiandae!</p>
                 <div class="bg-contact">
-                     <p class="contact">0978 77-66-55</p>
+                     <p class="contact">{{$listFrontendCommon['phone-1']}}</p>
                 </div>
             </div>
         </div>

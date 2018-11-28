@@ -10,22 +10,18 @@
                     GIỚI THIỆU VỀ CÔNG TY TNHH <span style="color: #0d95e8;">NGUYỄN THẮNG</span><br><br>
                     <span>CÔNG TY KẾ TOÁN UY TÍN</span> <br><br>
                 </p>
-                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque hic libero nesciunt.</p>
-                <br>
-                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ex fuga ratione recusandae? Aliquid
-                    aspernatur atque consequatur delectus earum incidunt molestiae nostrum tempora unde voluptates!
-                    Adipisci eum ipsa nostrum odio?</p>
+                <p class="text-justify">{{$listFrontendCommon['introduceFooter']->description}}</p>
             </div>
             <div class="col-md-4 col-sm-6 col-12">
                 <h5 style="background-image:url({{URL::asset('images/bg/footer-bg-title-new.png')}});">DỊCH VỤ KẾ
                     TOÁN</h5>
                 <ul class="middle">
 
-                    @for ($i = 0; $i < 8; $i++)
+                    @foreach($listFrontendCommon['servicesFooter'] as $key=>$item)
                         <li>
-                            <a href="">Dịch vụ kế toán và tài chính</a>
+                            <a href="{{URL::to('dich-vu/'.$item->path)}}">{{$item->title}}</a>
                         </li>
-                    @endfor
+                    @endforeach
 
                 </ul>
 
@@ -36,18 +32,17 @@
                 <ul>
                     <li class="d-flex align-items-center">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p>Địa chỉ: 189 Đường Tây Thạnh, Phường Tây Thạnh,
-                            Quận Tân Phú, TP. Hồ Chí Minh</p>
+                        <p>Địa chỉ: {{$listFrontendCommon['address']}}</p>
                     </li>
                     <li class="d-flex align-items-center">
                         <i class="fas fa-phone"></i>
-                        <p>0978-77-66-55 <br>
-                            02838-15-50-61</p>
+                        <p>{{$listFrontendCommon['phone-1']}} <br>
+                            {{$listFrontendCommon['phone-2']}}</p>
                     </li>
 
                     <li class="d-flex align-items-center" sty>
                         <i class="far fa-envelope"></i>
-                        <p style="word-break: break-all;">ketoanuytinnguyenthang@gmail.com
+                        <p style="word-break: break-all;">{{$listFrontendCommon['email']}}
                         </p>
                     </li>
 

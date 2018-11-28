@@ -27,3 +27,5 @@ define("NOT_BEST_SALE",0);
 define("IS_PAGE",0);
 define("IS_POST",1);
 
+define("NO_LIMIT",0);
+

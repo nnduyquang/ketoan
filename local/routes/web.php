@@ -1,37 +1,30 @@
 <?php
 
 
-Route::get('/', function () {
-    return view('frontend.home.index');
-});
+Route::get('/', 'FrontendController@getFrontend');
 
-Route::get('/gioi-thieu.html', function () {
-    return view('frontend.gioithieu.index');
-});
+Route::get('/gioi-thieu.html','FrontendController@getPageGioiThieu')->name('gioithieu');
 
-Route::get('/tin-tuc.html', function () {
-    return view('frontend.tintuc.index');
-});
+//Route::get('/tin-tuc.html', function () {
+//    return view('frontend.tintuc.index');
+//});
+Route::get('/tin-tuc.html', 'FrontendController@getAllTinTuc')->name('tintuc');
 
 Route::get('/tin-tuc-chi-tiet.html', function () {
     return view('frontend.tintuc-chitiet.index');
 });
 
-Route::get('/bao-gia.html', function () {
-    return view('frontend.gioithieu.index');
-});
+Route::get('/bao-gia.html','FrontendController@getPageBaoGia')->name('baogia');
 
-Route::get('/dich-vu-chi-tiet.html', function () {
-    return view('frontend.gioithieu.index');
-});
 
-Route::get('/dich-vu.html', function () {
-    return view('frontend.dichvu.index');
-});
+Route::get('/dich-vu/{path}','FrontendController@getPostDetail');
+
+
+Route::get('/dich-vu.html', 'FrontendController@getAllDichVu')->name('dichvu');
 
 Route::get('/lien-he.html', function () {
     return view('frontend.lienhe.index');
-});
+})->name('lienhe');
 
 
 Route::post('/tim-kiem','FrontendController@getSearch')->name('search');
