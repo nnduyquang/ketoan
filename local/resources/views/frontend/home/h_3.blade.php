@@ -63,32 +63,28 @@
 
             <div class="col-12 position-relative">
                 <div id="owl-project" class="owl-carousel owl-theme">
-                    @for ($i = 0; $i < 3; $i++)
+                    @foreach($listFrontendCommon['camnangs'] as $key=>$item)
                         <div>
-                            <a href="">
+                            <a href="{{URL::to('cam-nang-doanh-nghiep/'.$item->path)}}">
                                 <div class="items">
                                     <div class="img">
                                         <div class="img-link"
-                                             style="background-image:url({{URL::asset('images/dichvu/1.jpg')}});">
+                                             style="background-image:url({{URL::to($item->image)}});">
 
                                         </div>
                                     </div>
-                                    <h6>DỊCH VỤ BÁO CÁO THUẾ, DỊCH VỤ KHAI BÁO HẢI QUAN, DỊCH VỤ HOÀN THUẾ</h6>
+                                    <h6>{{$item->title}}</h6>
 
-                                    <h4 class="p-3 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                        elit. Alias aut facilis fuga fugit
-                                        iure iusto laborum molestiae mollitia, nemo non odit quisquam ratione rem
-                                        repellat sed
-                                        similique tenetur, vel vero!</h4>
+                                    <h4 class="p-3 text-justify">{!! $item->description !!}</h4>
 
                                     <div class="p-3 text-center mb-3 mt-2">
-                                        <a class="btn-chitiet" href="">CHI TIẾT</a>
+                                        <a class="btn-chitiet" href="{{URL::to('cam-nang-doanh-nghiep/'.$item->path)}}">CHI TIẾT</a>
                                         {{--<a class="btn-chitiet" href="">BÁO GIÁ DỊCH VỤ</a>--}}
                                     </div>
                                 </div>
                             </a>
                         </div>
-                    @endfor
+                    @endforeach
                 </div>
 
                 <button class="btn_pre"><i class="fas fa-angle-left"></i></button>

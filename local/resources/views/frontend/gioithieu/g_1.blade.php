@@ -5,6 +5,9 @@
                 <h1 class="p-3">{{$data['post']->title}}</h1>
                 {{--<h4>NỘI DUNG TRANG BẢNG GIÁ để làm màu xanh và font khác</h4>--}}
                 {!! $data['post']->content !!}
+                <div class="text-center">
+                    {!! $listFrontendCommon['contact'] !!}
+                </div>
             </div>
             <div class="col-md-3">
                 @include('frontend.common.r-common.dv-lq')

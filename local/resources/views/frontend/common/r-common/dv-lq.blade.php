@@ -66,7 +66,7 @@
                         {{--</div>--}}
                     {{--</a>--}}
                 {{--</div>--}}
-                <h6 class="pl-2"><a href="">{{$item->title}}</a></h6>
+                <h6 class="pl-2"><a href="{{URL::to('dich-vu/'.$item->path)}}">{{$item->title}}</a></h6>
             </div>
 
         @endforeach

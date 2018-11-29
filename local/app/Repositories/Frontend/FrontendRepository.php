@@ -16,10 +16,13 @@ class FrontendRepository implements FrontendRepositoryInterface
         $data = [];
         $category = new CategoryItem();
         $services = $category->getAllPostsByCategory('dich-vu', 6);
+
         foreach ($services as $key => $item) {
             $item->description = loai_bo_html_tag($item->description);
         }
+
         $data['services'] = $services;
+
         return $data;
     }
 
@@ -83,10 +86,17 @@ class FrontendRepository implements FrontendRepositoryInterface
         $config = new Config();
         $post = new Post();
         $services = $category->getAllPostsByCategory('dich-vu', 10);
+        $camnangs = $category->getAllPostsByCategory('cam-nang-doanh-nghiep', 6);
+        foreach ($camnangs as $key => $item) {
+            $item->description = loai_bo_html_tag($item->description);
+        }
+        $news = $category->getAllPostsByCategory('tin-tuc', 10);
         $servicesFooter = $category->getAllPostsByCategory('dich-vu', 10);
         $introduceFooter=$post->getPostByPath('gioi-thieu');
         $dataConfig = $config->getConfigByListName(['config-company-name','config-phone-1','config-phone-2','config-phone','config-address', 'config-email', 'config-contact', 'logo-config','script-js-header','script-js-body']);
         $data['services'] = $services;
+        $data['camnangs'] = $camnangs;
+        $data['news'] = $news;
         $data['servicesFooter'] = $servicesFooter;
         $introduceFooter->description=loai_bo_html_tag($introduceFooter->description);
         $data['introduceFooter']=$introduceFooter;

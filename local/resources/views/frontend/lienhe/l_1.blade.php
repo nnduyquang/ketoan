@@ -30,19 +30,7 @@
                     </div>
                     <div class="col-md-6 mt-3 text-center">
                         {{--<img src="{{URL::asset('images/button/emailbg.png')}}" alt="">--}}
-                        <h4>LIÊN HỆ VỚI CHÚNG TÔI</h4>
-                        <h3 class="mb-3">CÔNG TY TNHH <span style="color: red">NGUYỄN</span> THẮNG <br>
-                            DỊCH VỤ KẾ TOÁN UY TÍN</h3>
-
-                        <p class="mb-2"><span style="color: red">ĐỊA CHỈ</span>: 189 Đường Tây Thạnh, Phường Tây Thạnh, Quận Tân Phú, TP.HCM</p>
-                        <p class="mb-2" style="word-break: break-all;"><span style="color: red">EMAIL</span>: ketoanuytinnguyenthang@gmail.com</p>
-                        <p class="mb-2"><span style="color: red">PHÒNG KINH DOANH</span>: 0909 64 85 80</p>
-                        <p class="mb-2"><span style="color: red">HOTLINE</span>: 0977 77-66-55</p>
-                        <p class="mb-2"><span style="color: red">PHONE</span>: 028.38 15-50-61</p>
-                        <p class="mb-2"><span style="color: red">FAX</span>: (028) 38.15.64.10</p>
-                        <p class="mb-2"><span style="color: red">MÃ SỐ THUẾ</span>: 03 04 33 95 88</p>
-
-                        <img src="{{URL::asset('images/button/emailbg1.png')}}" alt="" style="width: 250px;height: auto">
+                       {!! $listFrontendCommon['contact'] !!}
 
                     </div>
                 </div>
