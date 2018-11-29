@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width">
     <meta property="og:title" content="@yield('title')"/>
     {{--<meta property="og:type" content="article" />--}}
+    <link rel="shortcut icon" href="{{URL::asset('images/icon/favicon.ico')}}" type="image/x-icon">
+    <link rel="icon" href="{{URL::asset('images/icon/favicon.ico')}}" type="image/x-icon">
     <meta property="og:url" content="@yield('url-og')"/>
     <meta property="og:image" content="@yield('image-og')"/>
     <meta property="og:description" content="@yield('description')"/>
@@ -47,7 +49,9 @@
 </script>
 @yield('jv-scripts')
 {{ Html::script('js/scripts.js') }}
-
+<script>
+    new WOW().init();
+</script>
 
 <div class="callback d-lg-none d-md-none">
     <div class="phone_animation">

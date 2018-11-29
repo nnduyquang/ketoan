@@ -4,11 +4,15 @@
             <div class="carousel-item active">
                 <div class="img-slider" style="background-image:url({{URL::asset('images/slider/2.jpg')}});">
                     <div class="carousel-caption text-left d-none d-md-block">
-                        <h5 class="animated zoomIn slow">Luxury Faucets Collections</h5>
-                        <h6 class="animated zoomIn slow" style="animation-delay: 300ms">Flat 60% off for first 30
-                            Customer.</h6>
-                        <p class="animated zoomIn slow" style="animation-delay: 600ms">Quis est tam dissimile homini.
-                            Quia dolori non voluptas.</p>
+                        <h5 class="animated zoomIn slow">THÀNH LẬP DOANH NGHIỆP</h5>
+                        <h6 class="animated zoomIn slow" style="animation-delay: 300ms">
+                            KẾ TOÁN THUẾ
+                        </h6>
+                        <p class="animated zoomIn slow" style="animation-delay: 600ms">
+                            Tư vấn và đưa ra giải pháp về luật, thủ tục tuân thủ, kế toán tài chính và điều hành.
+                            <br>
+                             Phát triển kinh doanh cốt lõi.
+                        </p>
                         <button class="animated zoomIn" style="animation-delay: 1s">XEM CHI TIẾT</button>
                     </div>
                 </div>
@@ -17,33 +21,33 @@
                 <div class="img-slider" style="background-image:url({{URL::asset('images/slider/1.jpg')}});">
 
                     <div class="carousel-caption text-left d-none d-md-block">
-                        <h5 class="animated zoomIn slow">Luxury Faucets Collections</h5>
-                        <h6 class="animated zoomIn slow" style="animation-delay: 300ms">Flat 60% off for first 30
-                            Customer.</h6>
-                        <p class="animated zoomIn slow" style="animation-delay: 600ms">Quis est tam dissimile homini.
-                            Quia
-                            dolori non voluptas.</p>
+                        <h5 class="animated zoomIn slow">GIẢI PHÁP DOANH NGHIỆP</h5>
+                        <h6 class="animated zoomIn slow" style="animation-delay: 300ms">KẾ TOÁN THUẾ</h6>
+                        <p class="animated zoomIn slow" style="animation-delay: 600ms">
+                            Giải pháp nghiệp vụ kế toán thuế cho doanh nghiệp <br>
+                            Chuyên Nghiệp-Minh Bạch-Hiệu Quả
+                        </p>
                         <button class="animated zoomIn" style="animation-delay: 1s">XEM CHI TIẾT</button>
                     </div>
 
                 </div>
             </div>
-            <div class="carousel-item">
+            {{--<div class="carousel-item">--}}
 
-                <div class="img-slider" style="background-image:url({{URL::asset('images/slider/3.jpg')}});">
+                {{--<div class="img-slider" style="background-image:url({{URL::asset('images/slider/3.jpg')}});">--}}
 
-                    <div class="carousel-caption text-left d-none d-md-block">
-                        <h5 class="animated zoomIn slow">Luxury Faucets Collections</h5>
-                        <h6 class="animated zoomIn slow" style="animation-delay: 300ms">Flat 60% off for first 30
-                            Customer.</h6>
-                        <p class="animated zoomIn slow" style="animation-delay: 600ms">Quis est tam dissimile homini.
-                            Quia
-                            dolori non voluptas.</p>
-                        <button class="animated zoomIn" style="animation-delay: 1s">XEM CHI TIẾT</button>
-                    </div>
+                    {{--<div class="carousel-caption text-left d-none d-md-block">--}}
+                        {{--<h5 class="animated zoomIn slow">Luxury Faucets Collections</h5>--}}
+                        {{--<h6 class="animated zoomIn slow" style="animation-delay: 300ms">Flat 60% off for first 30--}}
+                            {{--Customer.</h6>--}}
+                        {{--<p class="animated zoomIn slow" style="animation-delay: 600ms">Quis est tam dissimile homini.--}}
+                            {{--Quia--}}
+                            {{--dolori non voluptas.</p>--}}
+                        {{--<button class="animated zoomIn" style="animation-delay: 1s">XEM CHI TIẾT</button>--}}
+                    {{--</div>--}}
 
-                </div>
-            </div>
+                {{--</div>--}}
+            {{--</div>--}}
         </div>
         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

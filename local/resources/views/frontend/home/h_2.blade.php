@@ -4,8 +4,9 @@
         <div class="row">
             <div class="col-12">
                 <h6 class="">BẠN ĐANG TÌM HIỂU VỀ <span style="color: #0d95e8;font-weight: bold">KẾ TOÁN THUẾ?</span></h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam libero magnam molestiae mollitia,
-                    necessitatibus nemo praesentium quae repudiandae!</p>
+                <p style="font-size: 18px">Doanh nghiệp phải hiểu rõ kế toán thuế – Người am hiểu thuế, kế toán mới chính là người thành công
+                    <br>
+                    Hãy gọi ngay cho chúng tôi để được tư vấn miễn phí</p>
                 <div class="bg-contact">
                      <p class="contact">{{$listFrontendCommon['phone-1']}}</p>
                 </div>

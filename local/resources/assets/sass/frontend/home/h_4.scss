@@ -1,0 +1,39 @@
+#h_4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  .item {
+    border: 2px solid #6f6f6f;
+    margin-top: 18px;
+    text-align: center;
+    &:hover{
+      .imgs{
+        transform: scale(1.1);
+      }
+    }
+    .imgs{
+      width: 168px;
+      height: 168px;
+      margin: auto;
+      border-radius: 50%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      border:5px solid #004085;
+      transition: .6s;
+      overflow: hidden;
+    }
+  }
+  .bottom-title{
+    text-align: center;
+    width: 100%;
+    padding: 18px 0px;
+    background-color: #004085;
+    color: white;
+    margin-bottom: 18px;
+    p{
+      font-family: 'Yeseva One', cursive;
+    }
+  }
+}

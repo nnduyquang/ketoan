@@ -8,7 +8,7 @@
             @foreach($data['services'] as $key=>$item)
                 <div class="col-md-4 mb-3">
                     <a href="{{URL::to('dich-vu/'.$item->path)}}">
-                        <div class="items">
+                        <div class="items wow fadeInDown">
                             {{--<div class="img">--}}
                                 {{--<div class="img-link"--}}
                                      {{--style="background-image:url({{URL::asset('images/dichvu/1.jpg')}});">--}}
