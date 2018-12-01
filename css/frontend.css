@@ -346,6 +346,7 @@ img {
 .sidebar ul li a {
   color: #757575;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .sidebar .background-sidebar {
