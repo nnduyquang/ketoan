@@ -1430,13 +1430,13 @@ This class is added to the container
   font-family: 'Yeseva One', cursive;
   color: #004085;
   position: relative;
-  margin-bottom: 32px;
 }
 
 #g_1 h1 {
   font-size: 22px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 32px;
 }
 
 #g_1 h1:after {
@@ -1452,6 +1452,10 @@ This class is added to the container
 }
 
 #g_1 h2, #g_1 h3 {
+  margin-bottom: 10px;
+}
+
+#g_1 h4 {
   margin-bottom: 10px;
 }
 
