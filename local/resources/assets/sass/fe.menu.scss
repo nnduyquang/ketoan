@@ -74,5 +74,44 @@
         }
       }
     }
+
+    .search-box{
+      width: fit-content;
+      border-radius: 18px;
+      background-color: #fff;
+      input{
+        background-color: transparent;
+        padding: 10px 20px;
+        border: none;
+        &:focus{
+          outline: none;
+        }
+      }
+      button{
+        height: 36px;
+        width: 36px;
+        line-height: 36px;
+        text-align: center;
+        border:none ;
+        border-radius: 50%;
+        background-color: #ccc;
+        cursor: pointer;
+        transition: .5s;
+        margin-right: 1px;
+        i{
+          color: #004085;
+          transition: .5s;
+        }
+        &:focus{
+          outline: none;
+        }
+        &:hover{
+          background-color: #004085;
+        }
+        &:hover i{
+          color: white;
+        }
+      }
+    }
   }
 }

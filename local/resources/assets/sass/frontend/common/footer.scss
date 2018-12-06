@@ -13,7 +13,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-color: rgba(00, 00, 00, 0.9);
+    background-color: rgba(17, 138, 252, 0.8);
   }
 
   .instro {
@@ -47,7 +47,7 @@
         top: 50%;
         left: 0;
         transform: translateY(-50%);
-        color: #007bff;
+        color: #1b1e21;
       }
       a {
         font-size: 16px;
@@ -55,7 +55,7 @@
         transition: .6s;
         line-height: 22px;
         &:hover{
-          color: #007bff;
+          color: #1b1e21;
         }
       }
     }
@@ -71,7 +71,7 @@
         padding-bottom: 18px;
         i {
           font-size: 38px;
-          color: #007bff;
+          color: #1b1e21;
         }
         p {
           line-height: 22px;

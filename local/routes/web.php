@@ -5,6 +5,10 @@ Route::get('/', 'FrontendController@getFrontend');
 
 Route::get('/gioi-thieu.html','FrontendController@getPageGioiThieu')->name('gioithieu');
 
+Route::get('/tim-kiem.html', function () {
+    return view('frontend.list-search.index');
+});
+
 
 Route::get('/tin-tuc.html', 'FrontendController@getAllTinTuc')->name('tintuc');
 

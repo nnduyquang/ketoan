@@ -52,16 +52,24 @@
     </div>
 
 </div>
+
 <div class="menu-content">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 d-flex justify-content-between align-items-center">
                 <ul>
                     @foreach($listMenu as $key=>$item)
                     <li><a class="{{ request()->is($item->link()) ? 'active' : '/' }}"
                         href="{{URL::to($item->link())}}">{{$item->title}}</a></li>
                     @endforeach
                 </ul>
+
+                <div class="d-flex align-items-center search-box">
+                    <input type="text" placeholder="Tìm kiếm tại đây"/>
+                    <button>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>

@@ -7,7 +7,7 @@
                 <img class="mr-3" src="{{URL::asset('images/logo/logo.png')}}" alt=""
                      style="width: 118px;height:auto;float:left;">
                 <p class="text-center">
-                    GIỚI THIỆU VỀ CÔNG TY TNHH <span style="color: #0d95e8;">NGUYỄN THẮNG</span><br><br>
+                    GIỚI THIỆU VỀ CÔNG TY TNHH <span style="color: #002752;font-weight: bold">NGUYỄN THẮNG</span><br><br>
                     <span>CÔNG TY KẾ TOÁN UY TÍN</span> <br><br>
                 </p>
                 <p class="text-justify">{{$listFrontendCommon['introduceFooter']->description}}</p>
