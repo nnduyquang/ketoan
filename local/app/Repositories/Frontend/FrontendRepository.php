@@ -92,7 +92,7 @@ class FrontendRepository implements FrontendRepositoryInterface
         }
         $news = $category->getAllPostsByCategory('tin-tuc', 10);
         $servicesFooter = $category->getAllPostsByCategory('dich-vu', 10);
-        $introduceFooter=$post->getPostByPath('gioi-thieu');
+        $introduceFooter=$post->getPostById(1);
         $dataConfig = $config->getConfigByListName(['config-company-name','config-phone-1','config-phone-2','config-phone','config-address', 'config-email', 'config-contact', 'logo-config','script-js-header','script-js-body']);
         $data['services'] = $services;
         $data['camnangs'] = $camnangs;
@@ -129,6 +129,14 @@ class FrontendRepository implements FrontendRepositoryInterface
     {
         $menu = new Menu();
         $data = $menu->getAllOrderBy('order');
+        return $data;
+    }
+
+    public function getSearch($request)
+    {
+        $data = [];
+        $post=new Post();
+        $data['posts']=$post->searchAllPost($request);
         return $data;
     }
 

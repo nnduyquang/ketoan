@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Repositories\Frontend\FrontendRepositoryInterface;
+use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
@@ -36,6 +37,10 @@ class FrontendController extends Controller
     public function getAllTinTuc(){
         $data = $this->frontendRepository->getAllTinTuc();
         return view('frontend.tintuc.index', compact('data'));
+    }
+    public function getSearch(Request $request){
+        $data = $this->frontendRepository->getSearch($request);
+        return view('frontend.list-search.index', compact('data'));
     }
 
 }

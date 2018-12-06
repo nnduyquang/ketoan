@@ -65,10 +65,12 @@
                 </ul>
 
                 <div class="d-flex align-items-center search-box">
-                    <input type="text" placeholder="Tìm kiếm tại đây"/>
+                    {!! Form::open(array('route' => 'frontend.search','method'=>'POST','name'=>'search-home')) !!}
+                    <input name="search-key" type="text" placeholder="Tìm kiếm tại đây"/>
                     <button>
                         <i class="fas fa-search"></i>
                     </button>
+                    {!! Form::close() !!}
                 </div>
             </div>
         </div>

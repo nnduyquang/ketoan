@@ -20,4 +20,6 @@ interface FrontendRepositoryInterface
     public function getFrontendCommon();
 
     public function getAllMenuFrontend();
+
+    public function getSearch($request);
 }

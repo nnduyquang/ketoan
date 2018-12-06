@@ -17,7 +17,9 @@ $(document).ready(function () {
             }
         })
     }
+
     sidebar();
+
     function runSlider() {
         plugins.slider.nivoSlider({
             effect: 'fade',
@@ -27,7 +29,18 @@ $(document).ready(function () {
             controlNav: false,
         });
     }
+
     if (plugins.slider.length) {
         runSlider();
     }
+    $('input[name=search-key]').on('keydown', function (e) {
+        var input_text = $(this).val();
+        if (e.which == 13) {
+            if (input_text == '')
+                e.preventDefault();
+            else {
+                $('form[name=search-home]').submit();
+            }
+        }
+    })
 });
