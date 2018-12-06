@@ -549,34 +549,33 @@ This class is added to the container
 }
 
 .loiph-slider h5 {
-  font-size: 38px;
+  font-size: 32px;
   font-family: 'Yeseva One', cursive;
   color: #007bff;
-  text-shadow: 1px 0px .5px white;
+  text-shadow: 1px 0px .5px #007bff;
 }
 
 .loiph-slider h6 {
   font-family: 'Yeseva One', cursive;
   margin-top: 12px;
-  font-size: 28px;
+  font-size: 25px;
   color: #007bff;
-  text-shadow: 1px 0px .5px white;
+  text-shadow: 1px 0px .5px #007bff;
 }
 
 .loiph-slider p {
-  color: red;
+  color: white;
   font-size: 20px;
   padding-top: 13px;
   line-height: 20px;
   font-family: 'Markazi Text', serif;
-  text-shadow: 0px 0px .5px white;
 }
 
 .loiph-slider p.desc {
-  color: red;
+  color: white;
   font-family: 'Markazi Text', serif;
-  font-size: 26px;
-  line-height: 28px;
+  font-size: 24px;
+  line-height: 23px;
 }
 
 .loiph-slider button {
@@ -716,7 +715,7 @@ This class is added to the container
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(13, 134, 248, 0.8);
 }
 
 #banner-title .nav-bar {
