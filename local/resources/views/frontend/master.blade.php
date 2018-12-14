@@ -40,6 +40,7 @@
 
 {{ Html::script('js/core.common.js') }}
 {{ Html::script('js/core.frontend.js') }}
+{{ Html::script('js/jquery.marquee.min.js') }}
 <script type="text/javascript">
     $.ajaxSetup({
         headers: {
@@ -51,9 +52,16 @@
 {{ Html::script('js/scripts.js') }}
 <script>
     new WOW().init();
+    $(function () {
+        $('.marquee').marquee({
+            duration: 10000,
+            direction: 'right'
+        });
+    })
+
 </script>
 
-<div class="callback d-lg-none d-md-none">
+<div class="callback d-lg-none d-md-none" style="bottom: -50px">
     <div class="phone_animation">
         <div class="phone_animation_circle"></div>
         <div class="phone_animation_circle_fill"></div>
@@ -61,7 +69,7 @@
                                                                             aria-hidden="true"></i></a>
     </div>
 </div>
-<div class="callback d-none d-md-block" style="right: 0px;bottom: -30px;left:inherit">
+<div class="callback d-none d-md-block" style="right: 30px;bottom: -48px;left:inherit">
     <div class="phone_animation">
         <div class="phone_animation_circle"></div>
         <div class="phone_animation_circle_fill"></div>

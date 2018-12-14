@@ -31,8 +31,18 @@
                     TÔI</h5>
                 <ul>
                     <li class="d-flex align-items-center">
+                        <i class="fas fa-archway"></i>
+                        <div>
+                            <p>Trụ sở chính: Lầu 2, Số 4 Đường D14A, P.Tây Thạnh, Q.Tân Phú. TP.HCM</p>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <div class="pl-2 pr-2">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p>Địa chỉ: {{$listFrontendCommon['address']}}</p>
+                        </div>
+                        <div>
+                            <p>Văn phòng đại diện: {{$listFrontendCommon['address']}}</p>
+                        </div>
                     </li>
                     <li class="d-flex align-items-center">
                         <i class="fas fa-phone"></i>

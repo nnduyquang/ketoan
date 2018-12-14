@@ -21,6 +21,7 @@
     @include('frontend.list-search.banner-title')
 @stop
 @section('container')
+    @include('frontend.common.marquee')
     @include('frontend.list-search.t_1')
     @include('frontend.home.h_2')
     @include('frontend.home.h_4')

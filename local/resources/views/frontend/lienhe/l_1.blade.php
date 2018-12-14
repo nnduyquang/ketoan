@@ -3,6 +3,13 @@
 </style>
 <div class="container-fluid" id="l_1" style="background-image:url({{URL::asset('images/bg/bg-full.png')}});">
     <div class="container">
+
+        <div class="row">
+            <div class="col-12 pl-lg-0 pl-0 pr-lg-3 pr-0 mb-4">
+                @include('frontend.common.marquee')
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-md-9 justify-content-center">
                 <h1 class="text-center main-title" style="font-size: 22px"><span class="text-dark">LIÊN HỆ VỚI</span>
