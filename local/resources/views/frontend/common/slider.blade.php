@@ -17,7 +17,7 @@
                                 kế toán tài chính và điều hành.<br>
                                 {{--Phát triển kinh doanh cốt lõi.--}}
                             </p>
-                            <button class="animated zoomIn" style="animation-delay: 1s">XEM CHI TIẾT</button>
+                            <button class="animated zoomIn" style="animation-delay: 1s"><a href="{{URL::to('dich-vu/dich-vu-ke-toan-tron-goi')}}"></a>XEM CHI TIẾT</button>
                         </div>
                     </div>
                 </div>
