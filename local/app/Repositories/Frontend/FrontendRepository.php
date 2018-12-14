@@ -85,7 +85,7 @@ class FrontendRepository implements FrontendRepositoryInterface
         $category = new CategoryItem();
         $config = new Config();
         $post = new Post();
-        $services = $category->getAllPostsByCategory('dich-vu', 10);
+        $services = $category->getAllPostsByCategory('dich-vu', 0);
         $camnangs = $category->getAllPostsByCategory('cam-nang-doanh-nghiep', 6);
         foreach ($camnangs as $key => $item) {
             $item->description = loai_bo_html_tag($item->description);
