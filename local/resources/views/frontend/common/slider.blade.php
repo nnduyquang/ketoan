@@ -17,7 +17,9 @@
                                 kế toán tài chính và điều hành.<br>
                                 {{--Phát triển kinh doanh cốt lõi.--}}
                             </p>
-                            <button class="animated zoomIn" style="animation-delay: 1s">XEM CHI TIẾT</button>
+                            <button class="animated zoomIn" style="animation-delay: 1s">
+                                <a href="http://demo.ketoanuytin.com/dich-vu/dich-vu-ke-toan-tron-goi">XEM CHI TIẾT</a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -36,7 +38,9 @@
                                 Giải pháp nghiệp vụ kế toán thuế cho doanh nghiệp <br>
                                 Chuyên Nghiệp-Minh Bạch-Hiệu Quả
                             </p>
-                            <button class="animated zoomIn" style="animation-delay: 1s">XEM CHI TIẾT</button>
+                            <button class="animated zoomIn" style="animation-delay: 1s">
+                                <a href="http://demo.ketoanuytin.com/dich-vu/dich-vu-ke-toan-tron-goi">XEM CHI TIẾT</a>
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,11 @@
 <div class="container-fluid" id="t_1" style="background-image:url({{URL::asset('images/bg/bg-full.png')}});">
     <div class="container">
         <div class="row">
+
+            <div class="col-12 pl-lg-0 pl-0 pr-lg-3 pr-0 mb-4">
+                @include('frontend.common.marquee')
+            </div>
+
             <div class="col-md-9 bg-white">
                 <div class="row mt-3">
                     <div class="col-md-6 mb-3">
