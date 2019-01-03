@@ -30,6 +30,7 @@ Route::get('/lien-he.html', function () {
 
 
 Route::post('/tim-kiem','FrontendController@getSearch')->name('frontend.search');
+Route::post('/sendmail/send', ['as' => 'mail.sendmail', 'uses' => 'MailController@sendMail']);
 
 
 

@@ -24,20 +24,43 @@
                     <div class="col-md-6">
                         <h4 class="mt-3 text-center">FORM LIÊN HỆ:</h4>
                         <div style="width: 100%;margin: auto">
-                            <span class="fr-title">Tên của bạn:</span><br>
-                            <input type="text" placeholder="Tên của bạn"><br>
-                            <span class="fr-title">Email:</span><br>
-                            <input type="text" placeholder="Email của bạn"><br>
+                            <div class="ip-name input-group">
+                                <span class="fr-title">Tên của bạn:</span><br>
+                                <input class="form-control input-text" name="name" type="text"
+                                       placeholder="Tên của bạn">
+                                <div class="invalid-feedback" style="font-size: 15px;font-weight:  bold;">
+                                    Please choose a username.
+                                </div>
+                            </div>
+                            <br>
+                            <div class="ip-email input-group">
+                                <span class="fr-title">Email:</span><br>
+                                <input class="form-control input-text" name="email" type="text"
+                                       placeholder="Email của bạn">
+                                <div class="invalid-feedback" style="font-size: 15px;font-weight:  bold;">
+                                    Please choose a username.
+                                </div>
+                            </div>
+                            <br>
                             <span class="fr-title">Nội dung liên hệ:</span><br>
-                            <textarea placeholder="Nội dung liên hệ" name="" id="" cols="30" rows="10"></textarea><br>
-                            <button class="send-lh">
-                                <img src="{{URL::asset('images/button/Send-Email-Button-Transparent-PNG.png')}}" alt="">
-                            </button>
+                            <textarea name="contentmail" placeholder="Nội dung liên hệ" name="" id="" cols="30"
+                                      rows="10"></textarea><br>
+                            <div class="button-group">
+                                <button id="btnSendMail" type="button" class="send-lh">
+                                    <img src="{{URL::asset('images/button/Send-Email-Button-Transparent-PNG.png')}}"
+                                         alt=""><i
+                                            class="fa fa-spinner fa-spin fa-3x fa-fw loadingSending" style="
+    font-size: 15px;display: none"></i><i
+                                            class="fa fa-check-circle successSending" aria-hidden="true"
+                                            style="display: none"></i>
+                                </button>
+                                <span style="display: none;color:  green;font-weight:  bold;margin-top:  5px;">Chúng tôi đã nhận được mail và sẽ phản hồi quý khách trong 24h. Xin cảm ơn.</span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 mt-3 text-center">
                         {{--<img src="{{URL::asset('images/button/emailbg.png')}}" alt="">--}}
-                       {!! $listFrontendCommon['contact'] !!}
+                        {!! $listFrontendCommon['contact'] !!}
 
                     </div>
                 </div>
