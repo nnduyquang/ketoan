@@ -22,11 +22,16 @@
     {{ Html::style('css/core.frontend.css') }}
     {{ Html::style('css/frontend.css') }}
     @yield('styles')
+    {!! $listFrontendCommon['script-js-header'] !!}
 </head>
 <body>
 <header id="header">
 
 </header>
+<div class="zalo-chat-widget" data-oaid="1122548163818284612" data-welcome-message="Rất vui khi được hỗ trợ bạn!"
+     data-autopopup="0" data-width="350" data-height="420"></div>
+
+<script src="https://sp.zalo.me/plugins/sdk.js"></script>
 
 <div id="blurrMe">
     @include('frontend.common.menu.m-menu')
@@ -50,6 +55,7 @@
 </script>
 @yield('jv-scripts')
 {{ Html::script('js/scripts.js') }}
+{!! $listFrontendCommon['script-js-body'] !!}
 <script>
     new WOW().init();
     $(function () {
@@ -78,19 +84,6 @@
     </div>
 </div>
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/5c04913840105007f37aa974/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-    })();
-</script>
-<!--End of Tawk.to Script-->
 </body>
 
 </Html>

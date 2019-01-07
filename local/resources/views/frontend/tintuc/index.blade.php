@@ -1,9 +1,9 @@
 @extends('frontend.master')
 @section('title')
-    Kế Toán Uy Tín - Công ty TNHH Nguyễn Hoàng
+    Kế Toán Uy Tín - Công ty TNHH Nguyễn Thắng
 @stop
 @section('description')
-    Kế Toán Uy Tín - Công ty TNHH Nguyễn Hoàng
+    Kế Toán Uy Tín - Công ty TNHH Nguyễn Thắng
 @stop
 @section('keyword')
 
@@ -12,7 +12,7 @@
 
 @stop
 @section('image-og')
-
+{{URL::to('images/uploads/images/dichvu/ketoantrongoi/img20161115095622-768x576_560552.jpg')}}
 @stop
 @section('styles')
     {{ Html::style('css/themes/default/default.css') }}
