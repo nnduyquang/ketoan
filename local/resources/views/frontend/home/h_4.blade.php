@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="bottom-title">
-                    <p>KHÁCH HÀNG & ĐỐI TÁC</p>
+                    <p>TIẾT KIỆM CHI PHÍ</p>
                 </div>
             </div>
         </div>

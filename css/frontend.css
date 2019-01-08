@@ -548,6 +548,13 @@ This class is added to the container
   width: fit-content;
 }
 
+.loiph-slider h4 {
+  padding-top: 8px;
+  font-family: 'Yeseva One', cursive;
+  font-size: 25px;
+  color: white;
+}
+
 .loiph-slider h5 {
   font-size: 32px;
   font-family: 'Yeseva One', cursive;

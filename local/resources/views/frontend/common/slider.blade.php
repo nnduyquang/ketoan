@@ -10,14 +10,19 @@
                                 KẾ TOÁN THUẾ
                             </h6>
                             <p class="animated zoomIn slow" style="animation-delay: 500ms;font-size: 28px;">
-                                Miễn phí <span style="font-size: 33px;font-weight: bold">3</span> tháng báo cáo thuế.
+                                Miễn phí <span style="font-size: 30px;font-weight: bold">3</span> tháng báo cáo thuế.
                             </p>
                             <p class="animated zoomIn slow desc" style="animation-delay: 600ms">
                                 Tư vấn và đưa ra giải pháp về luật, thủ tục tuân thủ,
                                 kế toán tài chính và điều hành.<br>
                                 {{--Phát triển kinh doanh cốt lõi.--}}
                             </p>
-                            <button class="animated zoomIn" style="animation-delay: 1s"><a href="{{URL::to('dich-vu/dich-vu-ke-toan-tron-goi')}}"></a>XEM CHI TIẾT</button>
+
+                            <button class="animated zoomIn" style="animation-delay: 1s">
+                                <a href="http://demo.ketoanuytin.com/dich-vu/dich-vu-ke-toan-tron-goi">XEM CHI TIẾT</a>
+                            </button>
+
+                            <h4 class="animated zoomIn slow">Hotline: 0978.77.66.55</h4>
                         </div>
                     </div>
                 </div>
@@ -30,8 +35,9 @@
                             <h5 class="animated zoomIn slow">GIẢI PHÁP DOANH NGHIỆP</h5>
                             <h6 class="animated zoomIn slow" style="animation-delay: 300ms">KẾ TOÁN THUẾ</h6>
                             <p class="animated zoomIn slow" style="animation-delay: 500ms;font-size:  28px;">
-                                Miễn phí <span style="font-size: 33px;font-weight: bold">3</span> tháng báo cáo thuế.
+                                Miễn phí <span style="font-size: 30px;font-weight: bold">3</span> tháng báo cáo thuế.
                             </p>
+
                             <p class="animated zoomIn slow desc" style="animation-delay: 600ms">
                                 Giải pháp nghiệp vụ kế toán thuế cho doanh nghiệp <br>
                                 Chuyên Nghiệp-Minh Bạch-Hiệu Quả
@@ -39,6 +45,7 @@
                             <button class="animated zoomIn" style="animation-delay: 1s">
                                 <a href="http://demo.ketoanuytin.com/dich-vu/dich-vu-ke-toan-tron-goi">XEM CHI TIẾT</a>
                             </button>
+                            <h4 class="animated zoomIn slow">Hotline: 0978.77.66.55</h4>
                         </div>
                     </div>
                 </div>

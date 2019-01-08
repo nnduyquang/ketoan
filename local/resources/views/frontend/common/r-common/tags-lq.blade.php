@@ -11,11 +11,10 @@
     <h5>TAGS LIÊN QUAN</h5>
 
     <div class="p-2 pl-2">
-        <a class="tags" href="">#dichvuketoan</a>
-        <a  class="tags" href="">#ketoan</a>
-        <a  class="tags" href="">#ketoandoanhnghiep</a>
-        <a  class="tags" href="">#khaibaothue</a>
-        <a  class="tags" href="">#goroisosach</a>
+        <a class="tags" href="{{URL::asset('/dich-vu/dich-vu-ke-toan-tron-goi')}}">#dichvuketoan</a>
+        <a  class="tags" href="{{URL::asset('/dich-vu/dich-vu-ke-toan-tron-goi')}}">#ketoandoanhnghiep</a>
+        <a  class="tags" href="{{URL::asset('/dich-vu/dich-vu-bao-cao-thue')}}">#khaibaothue</a>
+        <a  class="tags" href="{{URL::asset('/dich-vu/dich-vu-go-roi-so-sach-ke-toan')}}">#goroisosach</a>
         <a class="tags" href="http://www.tracuuhoadon.gdt.gov.vn">#tracuuhoadon</a>
         <a  class="tags" href="http://dangkykinhdoanh.gov.vn/">#dangkykinhdoanh</a>
         <a  class="tags" href="http://tracuunnt.gdt.gov.vn">#tracuunnt</a>

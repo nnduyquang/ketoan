@@ -22,7 +22,20 @@
     {{ Html::style('css/core.frontend.css') }}
     {{ Html::style('css/frontend.css') }}
     @yield('styles')
-    {!! $listFrontendCommon['script-js-header'] !!}
+    <style>
+
+        .zalo-chat-widget {
+            width: 100px!important;
+            bottom: 13px!important;
+            height: 100px!important;
+        }
+
+        .zs-container .zs-ico .zs-ico-main {
+            width: 68px !important;
+            height: 68px !important;
+        }
+        
+    </style>
 </head>
 <body>
 <header id="header">
@@ -32,7 +45,6 @@
      data-autopopup="0" data-width="350" data-height="420"></div>
 
 <script src="https://sp.zalo.me/plugins/sdk.js"></script>
-
 <div id="blurrMe">
     @include('frontend.common.menu.m-menu')
     @include('frontend.common.menu.menu')
@@ -55,13 +67,12 @@
 </script>
 @yield('jv-scripts')
 {{ Html::script('js/scripts.js') }}
-{!! $listFrontendCommon['script-js-body'] !!}
 <script>
     new WOW().init();
     $(function () {
         $('.marquee').marquee({
             duration: 10000,
-            direction: 'right'
+            direction: 'left'
         });
     })
 
@@ -72,7 +83,7 @@
         <div class="phone_animation_circle"></div>
         <div class="phone_animation_circle_fill"></div>
         <a href="tel:{{$listFrontendCommon['hotline']}}" class="phone_animation_circle_fill_img"><i class="fas fa-phone"
-                                                                            aria-hidden="true"></i></a>
+                                                                                                    aria-hidden="true"></i></a>
     </div>
 </div>
 <div class="callback d-none d-md-block" style="right: 30px;bottom: -48px;left:inherit">
@@ -80,10 +91,23 @@
         <div class="phone_animation_circle"></div>
         <div class="phone_animation_circle_fill"></div>
         <a href="tel:{{$listFrontendCommon['hotline']}}" class="phone_animation_circle_fill_img"><i class="fas fa-phone"
-                                                                            aria-hidden="true"></i></a>
+                                                                                                    aria-hidden="true"></i></a>
     </div>
 </div>
 
+{{--<!--Start of Tawk.to Script-->--}}
+{{--<script type="text/javascript">--}}
+{{--var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();--}}
+{{--(function(){--}}
+{{--var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];--}}
+{{--s1.async=true;--}}
+{{--s1.src='https://embed.tawk.to/5c04913840105007f37aa974/default';--}}
+{{--s1.charset='UTF-8';--}}
+{{--s1.setAttribute('crossorigin','*');--}}
+{{--s0.parentNode.insertBefore(s1,s0);--}}
+{{--})();--}}
+{{--</script>--}}
+{{--<!--End of Tawk.to Script-->--}}
 </body>
 
 </Html>
